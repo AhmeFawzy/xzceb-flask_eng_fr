@@ -1,1 +1,1 @@
-from . imprt 
+from machinetranslation import translator
