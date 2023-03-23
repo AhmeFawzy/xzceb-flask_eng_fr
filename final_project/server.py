@@ -12,7 +12,7 @@ def englishToFrench():
     textToTranslate = request.args.get('textToTranslate')
     if textToTranslate is None:
         return "No text to translate"
-    frenchText = translator.englishToFrench(textToTranslate)
+    frenchText = translator.english_to_french(textToTranslate)
     return frenchText
 
 @app.route("/frenchToEnglish")
@@ -20,7 +20,7 @@ def frenchToEnglish():
     textToTranslate = request.args.get('textToTranslate')
     if textToTranslate is None:
         return "No text to translate"
-    englishText = translator.frenchToEnglish(textToTranslate)
+    englishText = translator.french_to_english(textToTranslate)
     return englishText
 
 if __name__ == "__main__":
